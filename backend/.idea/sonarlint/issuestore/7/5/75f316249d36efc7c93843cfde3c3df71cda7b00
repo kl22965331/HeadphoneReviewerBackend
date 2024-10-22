@@ -1,0 +1,10 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú´¹ë8–ÿ´¸©2
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ƒáåõ8¢ÿ´¸©2
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(‰ô÷íÿÿÿÿÿ8¤ÿ´¸©2
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8¤ÿ´¸©2
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8¤ÿ´¸©2

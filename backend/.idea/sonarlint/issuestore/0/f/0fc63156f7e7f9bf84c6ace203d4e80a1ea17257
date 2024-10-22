@@ -1,0 +1,6 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†ÄË¸8Ï¡–‡«2
+W
+java:S1068"5Remove this unused "jwtTokenGenerator" private field.(ëÇ“Èúÿÿÿÿ8ß¡–‡«2
+X
+java:S1068"6Remove this unused "userDetailsService" private field.(ÙÍ•¯üÿÿÿÿ8ß¡–‡«2
