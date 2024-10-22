@@ -1,0 +1,36 @@
+
+ƒ
+java:S1488["fImmediately return this expression instead of assigning it to the temporary variable "authentication".(¢Ç©ÿ8ã°Á†«2
+h
+java:S2184*"FCast one of the operands of this multiplication operation to a "long".(çÄ®¤üÿÿÿÿ8ä°Á†«2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(×İşÿÿÿÿ8ä°Á†«2
+T
+java:S2589E"7Remove this expression which always evaluates to "true"(ûÂü·8ó°Á†«2
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ı¦·8ô°Á†«2
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬ãæÛ8ô°Á†«2
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ã÷·ô8ô°Á†«2
+e
+java:S56590"CThe JWT signature (JWS) should be verified before using this token.(ÄıÃÁşÿÿÿÿ8ú°Á†«2
+G	java:S1061"+Replace this use of System.out by a logger.(Í äå8ú°Á†«2
+S
+java:S6437;"6Revoke and change this password, as it is compromised.(©Òß8ü°Á†«2
+K
+java:S1874:".Remove this use of "parser"; it is deprecated.(¹Ñº¹8ü°Á†«2
+R
+java:S1874;"5Remove this use of "setSigningKey"; it is deprecated.(©Òß8ü°Á†«2
+=
+java:S2129D" Remove this "String" constructor(¯ª—ó8ş°Á†«2
+—
+java:S2159E"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(ûÂü·8ş°Á†«2
+=
+java:S2129E" Remove this "String" constructor(ûÂü·8ş°Á†«2
+=
+java:S2129E" Remove this "String" constructor(ûÂü·8ÿ°Á†«2
+e
+java:S5659H"CThe JWT signature (JWS) should be verified before using this token.(ÄıÃÁşÿÿÿÿ8ÿ°Á†«2
+l
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8±Á†«2
+ˆ
+java:S1128"kRemove this unused import 'org.springframework.security.web.authentication.WebAuthenticationDetailsSource'.(¨ •À8±Á†«2
+K
+java:S1068".Remove this unused "expireTime" private field.(ã÷·ô8‚±Á†«2
