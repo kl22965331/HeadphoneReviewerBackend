@@ -1,2 +1,4 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÒßøÿÿÿÿ8ª ²²ª2
+h
+java:S1128	"FRemove this unused import 'org.springframework.stereotype.Repository'.(¦ýÍýüÿÿÿÿ8íÉ•øÊ2

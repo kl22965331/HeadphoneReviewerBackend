@@ -4,7 +4,13 @@ import com.example.demo.Entity.User;
 
 
 public interface UserService {
-    public void addUser(User user);
+    public User getUserByUserId(int id);
+    public User getUserByUsername(String username);
+    public void addUserWithUserRole(User user);
+
+    public void updatePasswordOrEmail(User user);
+    public void deleteUserById(int id);
+    public void deleteUserByUsername(String username);
 
     boolean isUsernamePresent(String username);
 

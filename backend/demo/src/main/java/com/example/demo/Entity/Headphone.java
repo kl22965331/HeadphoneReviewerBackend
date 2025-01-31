@@ -1,9 +1,10 @@
 package com.example.demo.Entity;
 
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Lazy;
+
 import java.time.LocalDateTime;
 import java.util.*;
 @Entity
@@ -25,13 +26,15 @@ public class Headphone {
     @Column(nullable = false)
     private int price;
 
-    @Column(name = "reviewscount", nullable = false)
-    private int reviewsCount;
+    @Column(columnDefinition ="MEDIUMBLOB")
+    private byte[] image;
 
-    @Column(name = "createdDateTime",nullable = false)
+    @Column(nullable = false)
     private LocalDateTime createDateTime = LocalDateTime.now();
 
+
     @OneToMany(mappedBy = "headphone",cascade =CascadeType.REMOVE)
+    @Lazy
     private List<Review> reviews;
 
 
@@ -39,24 +42,22 @@ public class Headphone {
     public Headphone() {
     }
 
-    public Headphone(String name, String brand, int price) {
+    public Headphone(String name, String brand, int price,byte[] image) {
         this.name = name;
         this.brand = brand;
         this.price = price;
-        this.reviewsCount =0;
         this.createDateTime = LocalDateTime.now();
+        this.image=image;
     }
 
-    @Override
-    public String toString() {
-        return "Headphone{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", brand='" + brand + '\'' +
-                ", price=" + price +
-                ", reviewsCount=" + reviewsCount +
-                ", createDateTime=" + createDateTime +
-                ", reviews=" + reviews +
-                '}';
+    public Headphone(int id, String name, String brand, int price, byte[] image, LocalDateTime createDateTime) {
+        this.id = id;
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.image = image;
+        this.createDateTime = createDateTime;
     }
+
+
 }
