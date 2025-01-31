@@ -1,21 +1,12 @@
 package com.example.demo.Exception;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-
-
-
 public class CustomException extends RuntimeException{
 
 
-    private  int httpStatus;
+    private  int httpStatus=200;
     private  String message;
 
     public CustomException(){
-        this.httpStatus=200;
         this.message="ok";
     }
 
@@ -24,10 +15,12 @@ public class CustomException extends RuntimeException{
 
     }
 
+
     public CustomException(int httpStatus, String message) {
         this.httpStatus = httpStatus;
         this.message = message;
     }
+    public int getHttpStatus(){return httpStatus;}
 
 
 

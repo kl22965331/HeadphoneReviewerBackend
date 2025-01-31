@@ -1,18 +1,6 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú´¹ë8ğÀœ·©2
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú´¹ë8¾¶úöÊ2
 E
-java:S1165"#Make this "httpStatus" field final.(¡âÊùÿÿÿÿ8êÀ¥·©2
+java:S1165"#Make this "httpStatus" field final.(… òŞúÿÿÿÿ8àºüöÊ2
 B
-java:S1165" Make this "message" field final.(ù„è¿ûÿÿÿÿ8êÀ¥·©2
-G
-java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙ8õÀœ·©2
-G
-java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµ8õÀœ·©2
-b
-java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8õÀœ·©2
-g
-java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8õÀœ·©2
-r
-java:S1128"URemove this unused import 'org.springframework.web.bind.annotation.ExceptionHandler'.(–Œ•¬8õÀœ·©2
-P
-java:S1068".Remove this unused "httpStatus" private field.(¡âÊùÿÿÿÿ8õÀœ·©2
+java:S1165" Make this "message" field final.(ù„è¿ûÿÿÿÿ8Æ¶úöÊ2

@@ -1,8 +1,4 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú´¹ë8¬üàë§2
 G
-java:S6829"*Add @Autowired to one of the constructors.(ş€ßâ8ÓÃ’ï§2
-G
-java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙ8ïéÂ¶©2
-G
-java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµ8ïéÂ¶©2
+java:S6829"*Add @Autowired to one of the constructors.(ş€ßâ8ÓÃ’ï§2

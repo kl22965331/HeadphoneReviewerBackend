@@ -4,12 +4,15 @@ import com.example.demo.DAO.RoleRepository;
 import com.example.demo.DAO.UserRepository;
 import com.example.demo.Entity.Role;
 import com.example.demo.Entity.User;
+import com.example.demo.Exception.CustomException;
 import com.example.demo.Service.UserService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import java.util.Optional;
 
 
 @Service
@@ -29,7 +32,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(User user) {
+    public User getUserByUserId(int id) {
+        Optional<User> tempUser = userRepository.findById(id);
+        if(!tempUser.isEmpty()){
+            User user = tempUser.get();
+            user.setPassword(null);
+            return user;
+        }else {
+            return null;
+        }
+    }
+
+    @Override
+    public User getUserByUsername(String username) throws CustomException{
+        return userRepository.findByUsername(username);
+    }
+
+
+    @Override
+    @Transactional
+    public void addUserWithUserRole(User user) {
         String password = user.getPassword();
         String encodedPasswor = encoder.encode(password);
         user.setPassword("{bcrypt}"+encodedPasswor);
@@ -37,6 +59,35 @@ public class UserServiceImpl implements UserService {
             roleRepository.save(new Role(user.getUsername(),"user"));
 
 
+    }
+
+    @Override
+    @Transactional
+    public void updatePasswordOrEmail(User user){
+            Optional<User> optionalUser = userRepository.findById(user.getId());
+            if(optionalUser.isPresent()){
+                User targetUser=optionalUser.get();
+                targetUser.setPassword("{bcrypt}"+encoder.encode(user.getPassword()));
+                targetUser.setEmail(user.getEmail());
+                userRepository.save(targetUser);
+            }else {
+                throw new CustomException("無效操作");
+            }
+
+
+
+    }
+
+    @Override
+    @Transactional
+    public void deleteUserById(int id) {
+        userRepository.deleteById(id);
+    }
+
+    @Override
+    @Transactional
+    public void deleteUserByUsername(String username) {
+        userRepository.deleteUserByUsername(username);
     }
 
     @Override
