@@ -1,4 +1,4 @@
-# demo
+# HeadphoneReviewerBackend
 
 ## 專案簡介
 
@@ -35,4 +35,4 @@
 1. 克隆專案到本地：
 
    ```sh
-   git clone https://github.com/USERNAME/demo.git
+   git clone https://github.com/kl22965331/HeadphoneReviewerBackend.git
