@@ -7,7 +7,7 @@
 ## 專案結構
 
 專案結構如下：
-
+後端部分:
 - **spring-boot-starter-parent**：Spring Boot的父POM
 - **spring-boot-starter-actuator**：Spring Boot Actuator，用於監控和管理應用程序
 - **spring-boot-starter-data-jpa**：Spring Data JPA，用於數據訪問
@@ -23,6 +23,8 @@
 - **spring-boot-starter-logging**：Spring Boot Logging，用於日誌記錄
 - **spring-boot-starter-aop**：Spring Boot AOP，用於面向切面編程
 
+前端部分使用vue實現
+前端有使用到Vue、Vue Router、Vuex、Axios、Element Plus 和 Sass。開發工具則包括 Vue CLI、Babel 和 Core-j
 ## 環境要求
 
 - **Java 17**
