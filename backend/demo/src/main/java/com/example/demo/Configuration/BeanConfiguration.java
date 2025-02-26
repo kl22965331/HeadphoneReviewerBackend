@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 public class BeanConfiguration {
     @Bean
     PasswordEncoder passwordEncoder(){
-
         return new BCryptPasswordEncoder();
     }
 
