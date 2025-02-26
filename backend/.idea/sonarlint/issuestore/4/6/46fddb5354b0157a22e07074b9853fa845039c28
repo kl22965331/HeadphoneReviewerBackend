@@ -1,0 +1,6 @@
+
+Š
+java:S1319"mThe return type of this method should be an interface such as "Set" rather than the implementation "HashSet".(°ñ…8šÄßöÊ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÒßøÿÿÿÿ8«´ÑÄ2
+S
+java:S1128"6Remove this unused import 'org.hibernate.mapping.Set'.(Ö™³é8£ÄßöÊ2
