@@ -28,5 +28,6 @@ public class AuthorityCheckAspect {
             System.out.println("No authentication present in SecurityContextHolder.");
         }
     }
+
 }
 

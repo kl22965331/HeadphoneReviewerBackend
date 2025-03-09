@@ -13,7 +13,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public SimpleResponse handleException(Exception exception, HttpServletResponse response) throws IOException {
-        SimpleResponse simpleResponse = new SimpleResponse(response.getStatus(),"something wrong");
+        SimpleResponse simpleResponse = new SimpleResponse(500,"something wrong");
         return simpleResponse;
     }
 

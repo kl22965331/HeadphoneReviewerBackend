@@ -18,6 +18,7 @@ com\example\demo\DAO\LogRepository.class
 com\example\demo\Exception\CustomException.class
 com\example\demo\Util\Result.class
 com\example\demo\Entity\Comment.class
+com\example\demo\AOP\ExceptionLoggingAspect.class
 com\example\demo\Service\util\HeadphoneBrand.class
 com\example\demo\Configuration\BeanConfiguration.class
 com\example\demo\Controller\ReviewController.class
@@ -41,10 +42,12 @@ com\example\demo\DAO\CommentRepository.class
 com\example\demo\Exception\GlobalExceptionHandler.class
 com\example\demo\Configuration\SecurityConfiguration.class
 com\example\demo\Service\HeadphoneService.class
+com\example\demo\Entity\ExceptionEntity.class
 com\example\demo\Controller\CommentController.class
 com\example\demo\Exception\IncorrectJwtTokenException.class
 com\example\demo\Service\ReviewService.class
 com\example\demo\Exception\SimpleResponse.class
+com\example\demo\DAO\ExceptionRepository.class
 com\example\demo\Configuration\WebConfiguration$1.class
 com\example\demo\Controller\HeadphoneController.class
 com\example\demo\Util\VerificationEmail.class

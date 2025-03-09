@@ -2,11 +2,13 @@ package com.example.demo.AOP;
 
 import com.example.demo.Service.LogService;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -14,6 +16,7 @@ import java.time.format.DateTimeFormatter;
 
 @Aspect
 @Component
+@Order(3)
 public class ControllerAspect {
     private LogService logService;
 
@@ -36,4 +39,5 @@ public class ControllerAspect {
         logService.saveLog("INFO",message,now);
 
     }
+
 }
